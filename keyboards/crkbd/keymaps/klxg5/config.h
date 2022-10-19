@@ -52,4 +52,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define MK_COMBINED
 
-#define COMBO_COUNT 6
+#define COMBO_COUNT 7

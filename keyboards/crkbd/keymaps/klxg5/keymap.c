@@ -30,7 +30,8 @@ enum combos {
     F_LCBR,
     G_RCBR,
     V_LBRC,
-    B_RBRC
+    B_RBRC,
+    C_TILD
 };
 
 const uint16_t PROGMEM lprn_combo[] = {KC_BSPC, KC_R, COMBO_END};
@@ -39,6 +40,7 @@ const uint16_t PROGMEM lcbr_combo[] = {KC_BSPC, KC_F, COMBO_END};
 const uint16_t PROGMEM rcbr_combo[] = {KC_BSPC, KC_G, COMBO_END};
 const uint16_t PROGMEM lbrc_combo[] = {KC_BSPC, KC_V, COMBO_END};
 const uint16_t PROGMEM rbrc_combo[] = {KC_BSPC, KC_B, COMBO_END};
+const uint16_t PROGMEM tild_combo[] = {KC_BSPC, KC_C, COMBO_END};
 
 combo_t key_combos[COMBO_COUNT] = {
     [R_LPRN] = COMBO(lprn_combo, KC_LPRN),
@@ -46,7 +48,8 @@ combo_t key_combos[COMBO_COUNT] = {
     [F_LCBR] = COMBO(lcbr_combo, KC_LCBR),
     [G_RCBR] = COMBO(rcbr_combo, KC_RCBR),
     [V_LBRC] = COMBO(lbrc_combo, KC_LBRC),
-    [B_RBRC] = COMBO(rbrc_combo, KC_RBRC)
+    [B_RBRC] = COMBO(rbrc_combo, KC_RBRC),
+    [C_TILD] = COMBO(tild_combo, KC_TILD)
 };
 
 typedef enum {
@@ -95,7 +98,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_NM] = LAYOUT_split_3x6_3(
       _______, KC_EXLM, KC_AT,   KC_UP,   KC_HASH, KC_PERC,                    KC_PLUS, KC_7, KC_8, KC_9, KC_EQL,  _______,
       _______, KC_CIRC, KC_LEFT, KC_DOWN, KC_RGHT, KC_DLR,                     KC_DOT,  KC_4, KC_5, KC_6, _______, _______,
-      _______, KC_AMPR, KC_PIPE, KC_DQUO, KC_QUES, KC_COLN,                    KC_0,    KC_1, KC_2, KC_3, KC_BSLS, _______,
+      _______, KC_AMPR, KC_PIPE, KC_GRV,  KC_QUES, KC_COLN,                    KC_0,    KC_1, KC_2, KC_3, KC_BSLS, _______,
                                           _______, _______, _______,  _______, _______, _______
   ),
 
