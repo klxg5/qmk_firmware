@@ -1,0 +1,15 @@
+MOUSEKEY_ENABLE = yes    # Mouse keys
+RGBLIGHT_ENABLE = yes    # Enable WS2812 RGB underlight.
+OLED_ENABLE     = yes
+OLED_DRIVER     = SSD1306
+LTO_ENABLE      = yes
+BOOTLOADER = atmel-dfu
+# WPM_ENABLE = yes
+# BOOTLOADER = caterina
+TAP_DANCE_ENABLE = yes
+COMBO_ENABLE = yes
+MAGIC_ENABLE = no
+COMMAND_ENABLE = no
+EXTRAKEY_ENABLE = no
+SPACE_CADET_ENABLE = no
+GRAVE_ESC_ENABLE = no
